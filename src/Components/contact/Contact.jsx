@@ -19,9 +19,10 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form action="https://formsubmit.co/c9a78732234999ed6c301ecb969be68f" method="POST" onSubmit={handleSubmit}>
+        <form action="POST" data-netlify='true' onSubmit={handleSubmit}>
           <input name='email' type="email" required placeholder='Email' />
-          <textarea name='textarea' placeholder='Message'></textarea>
+          <textarea name='message' placeholder='Message'></textarea>
+          <div data-netlify-recaptcha='true'></div>
           <button type='submit'>Send</button>
           {message && <span>Thank You! Have a nice day!</span>}
         </form>
