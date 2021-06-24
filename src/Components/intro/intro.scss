@@ -4,6 +4,11 @@
   background-color:white;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left{
     flex: 0.5;
     overflow: hidden;
@@ -17,11 +22,20 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
-    }
 
-    img{
-      height: 100%;
-      width: 100%;
+      @include mobile {
+        align-items: flex-start;
+      }
+
+      img{
+        height: 100%;
+        width: 100%;
+  
+       @include mobile {
+         height: 90%;
+         width: 90%;
+       }
+      }
     }
 
   }
@@ -37,10 +51,19 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1{
         font-size: 60px;
         font-family: $mainFont;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
 
       h2{
@@ -69,6 +92,10 @@
       h3{
         font-size: 30px;
         font-family: $mainFont;
+
+        @include mobile {
+          font-size: 20px;
+        }
       }
     }
 

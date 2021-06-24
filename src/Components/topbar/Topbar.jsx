@@ -6,7 +6,7 @@ export default function Topbar({ setMenuOpen, menuOpen }) {
     <div className={`topbar ${menuOpen && 'active'}`} >
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className='logo'>Mayur's Portfolio.</a>
+          <a href="#intro" className='logo'>Portfolio</a>
           <div className="itemContainer">
             <PhoneAndroid className='icon' />
             <span> +431-276-3707 </span>

@@ -11,6 +11,10 @@
     position: absolute;
     cursor: pointer;
 
+    @include mobile {
+      display: none;
+    }
+
     &.left {
       left: 100px;
       transform: rotate(180deg);
@@ -28,6 +32,12 @@
     left: 0;
     transition: all 1s ease;
 
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .container{
       width: 100vw;
       display: flex;
@@ -43,6 +53,12 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+          width: 90%;
+          height: 250px;
+          margin: 20px 0;
+        }
+
         .left{
           flex: 4;
           height: 80%;
@@ -56,6 +72,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mobile {
+              flex: 8;
+              height: 100%;
+            }
 
             .imgContainer{
               width: 40px;
@@ -95,6 +116,10 @@
           justify-content: center;
           align-items: center;
           overflow: hidden;
+
+          @include mobile {
+            flex: 2;
+          }
 
           img{
             width: 400px;
