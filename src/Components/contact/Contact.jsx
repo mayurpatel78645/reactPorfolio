@@ -8,6 +8,8 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
+    e.target[0].value = "";
+    e.target[1].value = "";
   }
 
   return (
