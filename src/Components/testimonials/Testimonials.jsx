@@ -8,7 +8,8 @@ export default function Testimonials() {
       name: "Chris MacDonald",
       img: "assets/chris.jpg",
       overview: "Software Developer instructor at Manitoba Institute of Trades and Technology",
-      url: "https://github.com/cmacmitt"
+      url: "https://github.com/cmacmitt",
+      testimonial: "Since the very start of his time at MITT, Mayur has consistently been one of the top students in his cohort. His solutions are always well thought out, organized, and submitted early. Mayur participates in class consistently and takes a leadership role when part of a group. He is already a very good programmer and I have no doubt that he will continue to excel."
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ export default function Testimonials() {
       img: "assets/jessica.jpg",
       overview: "Tech Educator at the Manitoba Institute of Trades and Technology",
       url: "https://github.com/Texxica",
+      testimonial: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa fugiat commodi, itaque error sunt alias quo excepturi neque exercitationem.",
       active: true,
     }
   ]
@@ -32,7 +34,7 @@ export default function Testimonials() {
                 <a target='_blank' rel='noopener noreferrer' href={item.url}><img src="assets/github.svg" alt="" className='right' /></a>
               </div>
               <div className="center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa fugiat commodi, itaque error sunt alias quo excepturi neque exercitationem.
+                {item.testimonial}
               </div>
               <div className="bottom"></div>
                 <h3>{item.name}</h3>
