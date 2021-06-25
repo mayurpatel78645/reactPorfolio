@@ -60,6 +60,7 @@
         font-size: 60px;
         font-family: $mainFont;
         margin: 10px 0;
+        color: $mainColor;
 
         @include mobile {
           font-size: 40px;
@@ -69,6 +70,7 @@
       h2{
         font-size: 35px;
         font-family: $mainFont; 
+        color: $mainColor;
 
         span{
           font-family: $mainFont; 
@@ -92,6 +94,7 @@
       h3{
         font-size: 30px;
         font-family: $mainFont;
+        color: $mainColor;
 
         @include mobile {
           font-size: 20px;
