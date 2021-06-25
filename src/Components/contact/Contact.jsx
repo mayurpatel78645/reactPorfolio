@@ -1,9 +1,9 @@
 import './contact.scss';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 export default function Contact() {
 
-  const [message, setMessage] = useState(false);
+  //const [message, setMessage] = useState(false);
 
   /*const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,8 +19,8 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form name='contact v1' method='POST' data-netlify='true' onSubmit="submit">
-          <input type="hidden" name='form-name' value='contact v1' />
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
+          <input type="hidden" name='form-name' value="contact" />
           <input name='email' type="email" required placeholder='Email' />
           <textarea name='message' placeholder='Message'></textarea>
           <button type='submit'>Send</button>
