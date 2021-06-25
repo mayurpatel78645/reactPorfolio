@@ -19,7 +19,7 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
+        <form action="/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
           <input type="hidden" name='form-name' value="contact" />
           <input name='email' type="email" required placeholder='Email' />
           <textarea name='message' placeholder='Message'></textarea>
