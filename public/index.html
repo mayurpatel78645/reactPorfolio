@@ -19,6 +19,14 @@
     </style>
   </head>
   <body>
+    <!-- A little help for the Netlify post-processing bots -->
+    <form action="https://mystifying-kowalevski-500f6d.netlify.app/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
+      <input type="hidden" name='form-name' value="contact" />
+      <input name='email' type="email" required placeholder='Email' />
+      <textarea name='message' placeholder='Message'></textarea>
+      <button type='submit'>Send</button>
+      {/*message && <span>Thank You! Have a nice day!</span>*/}
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
