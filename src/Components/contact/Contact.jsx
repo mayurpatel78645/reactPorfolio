@@ -19,7 +19,8 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form name='contact' netlify onSubmit={handleSubmit}>
+        <form name='contact v1' method='POST' data-netlify='true' onSubmit={handleSubmit}>
+          <input type="hidden" name='form-name' value='contact v1' />
           <input name='email' type="email" required placeholder='Email' />
           <textarea name='message' placeholder='Message'></textarea>
           <button type='submit'>Send</button>
