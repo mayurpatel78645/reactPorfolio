@@ -37,3 +37,4 @@ export const tripPlanner = [
     url: "https://boring-jennings-fe735a.netlify.app"
   }
 ]
+

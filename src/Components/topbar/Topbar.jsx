@@ -1,12 +1,15 @@
 import './topbar.scss';
 import { PhoneAndroid, Mail } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 export default function Topbar({ setMenuOpen, menuOpen }) {
   return (
     <div className={`topbar ${menuOpen && 'active'}`} >
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className='logo'>Portfolio</a>
+          <Link to='/' style={{textDecoration: 'none', color: '#15023a'}}>
+          <p href="#intro" className='logo'>Portfolio</p>
+          </Link>
           <div className="itemContainer">
             <PhoneAndroid className='icon' />
             <span> +431-276-3707 </span>

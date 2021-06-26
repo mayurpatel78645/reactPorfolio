@@ -5,24 +5,41 @@ import Portfolio from './Components/portfolio/Portfolio';
 import Works from './Components/works/Works';
 import Testimonials from './Components/testimonials/Testimonials';
 import Contact from './Components/contact/Contact';
+import Blogs from './Components/blogs/Blogs';
 import Menu from './Components/menu/Menu';
 import React, { useState } from 'react';
+import BlogPage from './Components/blogs/BlogPage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-   <div className='app'>
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-        <Intro />
-        <Portfolio />
-        <Works />
-        <Testimonials />
-        <Contact />
-      </div>
-   </div>
+    <>
+    <Router>
+      <Switch>
+        <>
+        <div className='app'>
+            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <div className="sections">
+              <Route exact path='/'>
+                <Intro />
+                <Portfolio />
+                <Works />
+                <Blogs />
+                <Testimonials />
+                <Contact />
+              </Route>
+              <Route exact path='/blog'>
+                <BlogPage />
+              </Route>
+            </div>
+        </div>
+        </>
+      </Switch>
+    </Router>
+    </>
   );
 }
 

@@ -1,0 +1,23 @@
+@import "../../global.scss";
+
+.blogPage {
+  all: initial;
+  display: flex;
+  justify-content: center;
+  *{
+    overflow: hidden;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+
+
+    h1{
+      font-family: $mainFont;
+    }
+  }
+  
+}

@@ -24,7 +24,7 @@ export default function Portfolio() {
     {
       id: "tripPlanner",
       title: "Trip Planner"
-    }
+    },
   ]
 
   useEffect(() => {
