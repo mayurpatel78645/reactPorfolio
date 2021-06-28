@@ -12,11 +12,11 @@ export default function Topbar({ setMenuOpen, menuOpen }) {
           </Link>
           <div className="itemContainer">
             <PhoneAndroid className='icon' />
-            <span> +431-276-3707 </span>
+            <span> </span>
           </div>
           <div className="itemContainer">
             <Mail className='icon' />
-            <span> mayurpatel78645@gmail.com </span>
+            <span> </span>
           </div>
         </div>
         <div className="right">
