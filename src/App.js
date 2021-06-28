@@ -10,6 +10,7 @@ import Menu from './Components/menu/Menu';
 import React, { useState } from 'react';
 import BlogPage from './Components/blogs/BlogPage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './Components/aboutMe/About';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Works />
                 <Blogs />
                 <Testimonials />
+                <About />
                 <Contact />
               </Route>
               <Route exact path='/blog'>

@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.about {
+  
+  h1{
+    text-align: center;
+    font-family: $mainFont;
+    background-color: white;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .left{
+      flex: 4;
+      height: 650px;
+      width: 500px;
+      overflow: hidden;
+    }
+  
+    .right {
+      flex: 4;
+      height: 650px;
+      width: 500px;
+      background-color: crimson;
+      overflow: hidden;
+
+      .first-p{
+        margin-top: 30px;
+      }
+
+      p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        padding: 20px;
+        font-size: 20px;
+        margin-left: 50px;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import CodeSnippets from './CodeSnippets';
 import HtmlCss from './HtmlCss';
 import Ssl from './Ssl';
 import Password from './Password';
+import Games from './Games';
 
 export default function BlogPage() {
 
@@ -20,7 +21,7 @@ export default function BlogPage() {
           : query === 'HTML and CSS' ? <HtmlCss />
           : query === 'SSL' ? <Ssl />
           : query === 'Password Management' ? <Password />
-          : ''
+          : query === 'Games' ? <Games /> : ''
         }
       </div>
     </div>

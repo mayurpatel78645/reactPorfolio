@@ -42,3 +42,12 @@ export const password = [
     overview: "Password Management",
   }
 ]
+
+export const games = [
+  {
+    id: 6,
+    title: "Games",
+    img: "assets/controller.jpg",
+    overview: "Recommended Games"
+  }
+]

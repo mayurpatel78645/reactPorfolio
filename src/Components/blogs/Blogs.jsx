@@ -1,7 +1,7 @@
 import './blogs.scss';
 import PortfolioList from '../portfolioList/PortfolioList';
 import { useState, useEffect } from 'react';
-import { password, snippets, ssl, strategy, htmlCss } from '../../blogData';
+import { games, password, snippets, ssl, strategy, htmlCss } from '../../blogData';
 import { useHistory } from 'react-router-dom';
 
 export default function Blog() {
@@ -31,6 +31,10 @@ export default function Blog() {
     {
       id: "snippets",
       title: "Code Snippets"
+    },
+    {
+      id: "games",
+      title: "Games"
     }
   ]
 
@@ -50,6 +54,9 @@ export default function Blog() {
         break;
       case "snippets":
         setData(snippets);
+        break;
+      case "games":
+        setData(games);
         break;
       default: 
         setData(htmlCss);
