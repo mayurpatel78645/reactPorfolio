@@ -1,5 +1,4 @@
 import './topbar.scss';
-import { PhoneAndroid, Mail } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 
 export default function Topbar({ setMenuOpen, menuOpen }) {
@@ -11,11 +10,9 @@ export default function Topbar({ setMenuOpen, menuOpen }) {
           <p href="#intro" className='logo'>Portfolio</p>
           </Link>
           <div className="itemContainer">
-            <PhoneAndroid className='icon' />
             <span> </span>
           </div>
           <div className="itemContainer">
-            <Mail className='icon' />
             <span> </span>
           </div>
         </div>
